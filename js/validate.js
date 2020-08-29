@@ -1,5 +1,4 @@
 function echeck(){
-console.log("hello")
  var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
  		if(document.getElementById('email').value=="")
  		{
@@ -23,7 +22,7 @@ if(document.getElementById('tel').value=="")
  		{
  			document.getElementById('tel').innerHTML='This is a required field';
  		}
-if(String(document.getElementById('tel').value).length!==12 || reg.test(String(document.getElementById('tel').value))){
+if(String(document.getElementById('tel').value).length!==10 || reg.test(String(document.getElementById('tel').value))){
 document.getElementById('tel').innerHTML="This is not a valid phone number";
 }
 }
